@@ -1,5 +1,6 @@
 "use client";
-import { quizCreationSchema } from "@/schemas/forms/quiz";
+import { quizCreationSchema } from "@/schemas/form/quiz";
+
 import React from "react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
@@ -13,7 +14,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Button } from "../ui/button";
+
 import { Input } from "../ui/input";
 import { BookOpen, CopyCheck } from "lucide-react";
 import { Separator } from "../ui/separator";
@@ -29,6 +30,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import LoadingQuestions from "../LoadingQuestions";
+import { Button } from "./ui/button";
 
 type Props = {
   topic: string;
