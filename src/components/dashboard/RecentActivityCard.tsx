@@ -14,7 +14,7 @@ import { prisma } from "@/lib/db";
 
 type Props = {};
 
-const RecentActivities = async (props: Props) => {
+const RecentActivityCard = async (props: Props) => {
   const session = await getAuthSession();
   if (!session?.user) {
     return redirect("/");
@@ -32,15 +32,13 @@ const RecentActivities = async (props: Props) => {
         </CardTitle>
         <CardDescription>
           You have played a total of {games_count} quizzes.
-          You have played a total of 8 quizzes
         </CardDescription>
       </CardHeader>
       <CardContent className="max-h-[580px] overflow-scroll">
         <HistoryComponent limit={10} userId={session.user.id} />
-        Historiesss
       </CardContent>
     </Card>
   );
 };
 
-export default RecentActivities;
+export default RecentActivityCard;

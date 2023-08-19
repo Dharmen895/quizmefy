@@ -1,3 +1,4 @@
+"use client";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -25,8 +26,7 @@ const WordCloud = ({ formattedTopics }: Props) => {
         fill={theme.theme === "dark" ? "white" : "black"}
         onWordClick={(e, d) => {
           router.push("/quiz?topic=" + d.text);
-        }
-    }
+        }}
       />
     </>
   );
