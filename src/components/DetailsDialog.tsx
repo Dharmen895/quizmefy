@@ -32,12 +32,14 @@ const DetailsDialog = (props: Props) => {
                 <Github className="w-5 h-5" />
                 <Link
                   className="ml-1 underline"
-                  href="https://github.com/elliott-chong/quizmify"
+                  href="https://github.com/Dharmen895"
+                  target="_blank"
+
                 >
                   GitHub
                 </Link>
               </p>
-              <p className="flex items-center">
+              {/* <p className="flex items-center">
                 <Youtube className="w-5 h-5" />
                 <Link
                   className="ml-1 underline"
@@ -45,7 +47,7 @@ const DetailsDialog = (props: Props) => {
                 >
                   YouTube
                 </Link>
-              </p>
+              </p> */}
             </div>
             <p className="my-2 mt-4 ">
               Are you tired of mundane and repetitive quizzes? Say goodbye to
